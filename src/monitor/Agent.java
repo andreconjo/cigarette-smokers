@@ -20,16 +20,16 @@ public class Agent extends Thread{
 
 			this.randomIngredient = this.random.nextInt(3);
 			if (this.randomIngredient == 0) {
-				this.ingredient1 = "Tabacco";
-				this.ingredient2 = "Paper";
+				this.ingredient1 = "Tabaco";
+				this.ingredient2 = "Papel";
 			} 
 			else if (this.randomIngredient == 1) {
-				this.ingredient1 = "Tabacco";
-				this.ingredient2 = "Matches";
+				this.ingredient1 = "Tabaco";
+				this.ingredient2 = "Fósforos";
 			} 
 			else if (this.randomIngredient == 2) {
-				this.ingredient1 = "Matches";
-				this.ingredient2 = "Paper";
+				this.ingredient1 = "Fósforos";
+				this.ingredient2 = "Papel";
 			}
 			
 			this.monitor.depositIngredients(this.ingredient1, this.ingredient2);

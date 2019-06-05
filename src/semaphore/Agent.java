@@ -28,19 +28,19 @@ public class Agent extends Thread{
 			
 			this.randomIngredient = this.random.nextInt(3);
 			if (this.randomIngredient == 0) {
-				this.ingredient1 = "Tabacco";
-				this.ingredient2 = "Paper";
+				this.ingredient1 = "Tabaco";
+				this.ingredient2 = "Papel";
 			} 
 			else if (this.randomIngredient == 1) {
-				this.ingredient1 = "Tabacco";
-				this.ingredient2 = "Matches";
+				this.ingredient1 = "Tabaco";
+				this.ingredient2 = "Fósforos";
 			} 
 			else if (this.randomIngredient == 2) {
-				this.ingredient1 = "Matches";
-				this.ingredient2 = "Paper";
+				this.ingredient1 = "Fósforos";
+				this.ingredient2 = "Papel";
 			}
 			
-			System.out.println("I am the agent and I offer " + this.ingredient1 + " and " + this.ingredient2);
+			System.out.println("Eu sou o agente e ofereço " + this.ingredient1 + " e " + this.ingredient2);
 			
 			this.full.release();
 			

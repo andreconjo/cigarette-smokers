@@ -13,9 +13,9 @@ public class Main {
 		Agent agent = new Agent(full, empty);
        
         agent.start();
-        new Smoker(agent, "Tabacco", "Smoker 1", mutexS).start();
-        new Smoker(agent, "Paper", "Smoker 2", mutexS).start();
-        new Smoker(agent, "Matches", "Smoker 3", mutexS).start();
+        new Smoker(agent, "Tabaco", "Smoker 1", mutexS).start();
+        new Smoker(agent, "Papel", "Smoker 2", mutexS).start();
+        new Smoker(agent, "Fósforos", "Smoker 3", mutexS).start();
         
 	}
 }

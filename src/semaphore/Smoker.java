@@ -45,13 +45,13 @@ public class Smoker extends Thread{
 			}
 			
 			Delay.delay();
-			System.out.println("I am the " + this.name + " and I have " + this.myIngredient + 
-					". So I will make a cigarette with your " + this.agent.getIngredient1() + 
-					" and " + this.agent.getIngredient2());
+			System.out.println("Eu sou o " + this.name + " e eu tenho " + this.myIngredient + 
+					". Então eu vou fazer um cigarro com o seu " + this.agent.getIngredient1() + 
+					" e " + this.agent.getIngredient2());
 			Delay.delay();
-			System.out.println("Making");
+			System.out.println("Fazendo");
 			Delay.delay();
-			System.out.println("Smoking");
+			System.out.println("Fumando");
 			Delay.delay();
 			
 			this.mutexS.release();

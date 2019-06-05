@@ -23,7 +23,7 @@ public class AgentSmokerMonitor {
 			
 			this.ingredient1 = ingredient1;
 			this.ingredient2 = ingredient2;
-			System.out.println("I am the agent and I offer " + this.ingredient1 + " and " + this.ingredient2);
+			System.out.println("Eu sou o agente e ofereço " + this.ingredient1 + " e " + this.ingredient2);
 		    this.count = 2;
 		    this.notEmpty.signal();
 		} catch (InterruptedException e) {
@@ -43,13 +43,13 @@ public class AgentSmokerMonitor {
 			if (!this.haveThisIngredient(ingredient)) {
 				Delay.delay();
 				Delay.delay();
-				System.out.println("I am the " + name + " and I have " + ingredient + 
-						". So I will make a cigarette with your " + this.ingredient1 + 
-						" and " + this.ingredient2);
+				System.out.println("Eu sou o " + name + " e eu tenho " + ingredient + 
+						". Então eu vou fazer um cigarro com o seu " + this.ingredient1 + 
+						" e " + this.ingredient2);
 				Delay.delay();
-				System.out.println("Making");
+				System.out.println("Fazendo");
 				Delay.delay();
-				System.out.println("Smoking");
+				System.out.println("Fumando");
 				Delay.delay();
 				this.count = 0;
 				this.notFull.signal();
